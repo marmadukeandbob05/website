@@ -1,0 +1,43 @@
+{% extends "personal/header.html" %}
+{% block content %}
+
+{% include "personal/includes/navbar.html" %}
+
+
+
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <!-- <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p>
+      <p><a href="#">Link</a></p> -->
+    </div>
+    <div class="col-sm-8 text-left">
+      <h1>Welcome</h1>
+      <p>Welcome to my website. I like to make things with python!</p>
+      <hr>
+      <p>This website is made with django!</p>
+      <img src="http://cdn.litlepups.net/2017/02/24/cute-cat-full-hd-wallpaper-hd4wallpaper-net.jpg" alt="Cats" width="1000vw" align="middle">
+
+    </div>
+    <div class="col-sm-2 sidenav">
+      <!-- <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <hr>
+  <div class=footerlinks>
+    {% include "personal/includes/footer.html" %}
+  </div>
+</footer>
+
+
+<!-- {% include "personal/includes/htmlsnippet.html" %} -->
+{% endblock %}

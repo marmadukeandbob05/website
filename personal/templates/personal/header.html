@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Ben Sommer</title>
+	<meta charset="utf-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		img {
+			max-width: 100%;
+	    max-height: 100%;
+		}
+
+		ul.nav {
+			margin:0;
+			padding:0;
+			list-style:none;
+			height:80px; line-height:80px;
+			background:#bec0c4; /* you can change the backgorund color here. */
+			font-family:Arial, Helvetica, sans-serif;
+			font-size:16px;
+		}
+		ul.nav li {
+			border-right:1px solid #bec0c4; /* you can change the border color matching to your background color */
+			float:left;
+		}
+		ul.nav a {
+			display:block;
+			padding:0 calc(100vw / 7);
+			color:#39393a;
+			text-decoration:none;
+		}
+		ul.nav a:hover,
+		ul.nav li.current a {
+			background:#bec0c4;
+		}
+
+		img.center {
+  		display: block;
+   		margin-left: calc((100vw / 2) *0.2);
+   		margin-right: auto;
+			position: relative;
+		}
+
+		.footerlinks{
+			padding: 20px;
+			background-color: #dee0e2;
+			text-align: center;
+		}
+
+		img.relative{
+			position: relative;
+		}
+
+		h5{
+			padding: 10px;
+			margin-left: 20vw;
+		}
+
+		h3{
+			padding: 10px;
+			margin-left: 15vw;
+			font-size: 2em;
+		}
+
+		h3.abcde{
+			padding: 10px;
+			font-size: 2em;
+			margin-left: 0;
+		}
+
+		h6{
+			padding: 10px;
+			margin-left: 15vw;
+			font-size: calc(0.5 * 1em);
+		}
+
+
+		container, p{
+			padding: 10px;
+			font-size: 1em;
+			margin-left: 5vw;
+		}
+  </style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body class="body" style="background-color:#f6f6f6">
+	<div>
+	   {% block content %}
+	   {% endblock %}
+	</div>
+</body>
+
+</html>
